@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	</head><title> notice</title>
+		<script type="text/javascript" src = "notice.html">
+        function displayOutput() 
+        	{
+            var input = document.getElementById("userInput").value;
+            if (input.length === 0) 
+            	{
+                alert("Please enter a valid input");
+                return;
+            	}
+           document.getElementById("result").innerHTML = input;
+        	}
+    </script>
+<body>
+    <h1 id="result"><br><br></h1>
+	<input type="button" value="Display" onclick="displayOutput()" />
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+     <link rel="stylesheet" type="text/css" href="css/indexreg.css" />
+        <title>Registration Page</title>
+        <style type="text/css" src="css/indexreg.css">
+
+
+            body {font-family:Arial, Sans-Serif;}
+
+            #container {width:300px; margin:0 auto;}
+
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+            </style>            
+
+            <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    </head>
+       <body>
+       <div id="bgr">
+            <form>
+                <h1>Registration Page</h1>
+                <div id="head"></div>
+                <p style="color:white;">
+                <class="line"><label for="username">Username *: </label><input type="text" id="username" /><br><br>
+                <class="line"><label for="pwd">Password *: </label><input type="password" id="password" /><br><br>
+                <class="line"><label for="pwd1">Confirm Password*: </label><input type="password" id="pwd" /><br><br>
+                <class="line"><label for="roll">Employee/Student ID *: </label><input type="text" id="roll" /><br><br>
+                <class="line"><label for="email">Email ID *: </label><input type="text" id="eid" /><br><br>
+                <class="line"><label for="phn">Phone Number *: </label><input type="text" id="phn" /><br><br>
+                <class="line"><label for="role">Role *: </label><input type ="text" id="role"/><br/>
+                
+                <input type="button" id="submitBtn" onclick="submitClick();" value="Submit"></input>
+                <p style="color:white;">Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p><br>
+
+                 </p>
+                </form> 
+                   </div>
+
+
+
+    <script src="indexreg.js"></script>
+
+            
+    </body>
+    </html>
